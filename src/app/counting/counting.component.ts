@@ -7,14 +7,8 @@ import { Component } from '@angular/core';
 })
 
 export class countingComponent{
-    title:string;
-    count = 0;
-    
-    constructor() {
-
-    }
-    
-    countNumber() {
-        this.count = this.count + 1;
-    }
+    count: number = 0; //Property
+    countNumber(){ //Method
+        this.count ++; //this is ref all object in class
+    }    
 }
